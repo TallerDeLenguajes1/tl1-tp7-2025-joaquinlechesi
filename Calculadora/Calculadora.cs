@@ -5,7 +5,7 @@ class Calculadora
     // public int numero2;
     public double Dato
     {
-        get => dato;
+        // get => dato;
         set => dato = value;
     }
     public void Sumar(double termino)
