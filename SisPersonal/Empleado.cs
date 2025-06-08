@@ -7,7 +7,7 @@ class Empleado
     private string nombre;
     private string apellido;
     private DateTime fechaNacimiento;
-    private char estadoCivil;
+    private string estadoCivil;
     private DateTime fechaIngresoEmpresa;
     private double sueldoBasico;
     private Cargos cargo;
@@ -19,7 +19,7 @@ class Empleado
         Especialista = 4,
         Investigado = 5
     }
-    public Empleado(string Nombre, string Apellido, DateTime FechaNacimiento, char EstadoCivil, DateTime FechaIngresoEmpresa, double SueldoBasico, int Cargo)
+    public Empleado(string Nombre, string Apellido, DateTime FechaNacimiento, string EstadoCivil, DateTime FechaIngresoEmpresa, double SueldoBasico, int Cargo)
     {
         this.nombre = Nombre;
         this.apellido = Apellido;
@@ -60,7 +60,7 @@ class Empleado
         {
             adicional = adicional + (adicional * 0.50);
         }
-        if (estadoCivil == 'C') // comillas simples para char
+        if (estadoCivil == "C") // comillas simples para char
         {
             adicional = adicional + 150.00;
         }
