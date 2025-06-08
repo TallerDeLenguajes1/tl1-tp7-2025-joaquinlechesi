@@ -19,4 +19,26 @@ class Empleado
         Especialista = 4,
         Investigado = 5
     }
+    public Empleado(string Nombre, string Apellido, DateTime FechaNacimiento, char EstadoCivil, DateTime FechaIngresoEmpresa, double SueldoBasico)
+    {
+        this.nombre = Nombre;
+        this.apellido = Apellido;
+        this.fechaNacimiento = FechaNacimiento;
+        this.estadoCivil = EstadoCivil;
+        this.fechaIngresoEmpresa = FechaIngresoEmpresa;
+        this.sueldoBasico = SueldoBasico;
+        //this.cargo = CargoTrabajo; // Consultar como usar el enum con el metodo constructor.
+    }
+    // public int Antiguedad() // Metodo
+    // {
+        // return (DateTime.Now.Year - fechaIngresoEmpresa.Year);
+    // }
+    // public int Edad() // Metodo
+    // {
+        // return (fechaNacimiento.Year);
+    // }
+    // public int Jublilacion() // Metodo
+    // {
+        // return (65 - Antiguedad());
+    // }
 }
